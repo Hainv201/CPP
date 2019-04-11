@@ -1,0 +1,15 @@
+C:\Users\Hai Nguyen\Desktop\CPP\CPP\CPP\obj\Debug\CPP.Form1.resources
+C:\Users\Hai Nguyen\Desktop\CPP\CPP\CPP\obj\Debug\CPP.Properties.Resources.resources
+C:\Users\Hai Nguyen\Desktop\CPP\CPP\CPP\obj\Debug\CPP.csproj.GenerateResource.cache
+C:\Users\Hai Nguyen\Desktop\CPP\CPP\CPP\obj\Debug\CPP.csproj.CoreCompileInputs.cache
+C:\Users\Hai Nguyen\Desktop\CPP\CPP\CPP\bin\Debug\CPP.exe.config
+C:\Users\Hai Nguyen\Desktop\CPP\CPP\CPP\bin\Debug\CPP.exe
+C:\Users\Hai Nguyen\Desktop\CPP\CPP\CPP\bin\Debug\CPP.pdb
+C:\Users\Hai Nguyen\Desktop\CPP\CPP\CPP\obj\Debug\CPP.exe
+C:\Users\Hai Nguyen\Desktop\CPP\CPP\CPP\obj\Debug\CPP.pdb
+C:\Users\Hai Nguyen\Desktop\CPP\CPP\CPP\bin\Debug\OxyPlot.dll
+C:\Users\Hai Nguyen\Desktop\CPP\CPP\CPP\bin\Debug\OxyPlot.WindowsForms.dll
+C:\Users\Hai Nguyen\Desktop\CPP\CPP\CPP\bin\Debug\OxyPlot.WindowsForms.pdb
+C:\Users\Hai Nguyen\Desktop\CPP\CPP\CPP\bin\Debug\OxyPlot.WindowsForms.xml
+C:\Users\Hai Nguyen\Desktop\CPP\CPP\CPP\obj\Debug\CPP.csproj.CopyComplete
+C:\Users\Hai Nguyen\Desktop\CPP\CPP\CPP\obj\Debug\CPP.csprojAssemblyReference.cache
