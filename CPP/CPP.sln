@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPP", "CPP\CPP.csproj", "{5
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPPUnitTest", "CPPUnitTest\CPPUnitTest.csproj", "{23E955DF-87FD-4BC3-8864-3CBA8D4B0ABF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week_6_7_Assignment", "Week6Assignment\Week_6_7_Assignment.csproj", "{5D4FCF56-849C-4BA1-8164-2C725B3A3A09}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{23E955DF-87FD-4BC3-8864-3CBA8D4B0ABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23E955DF-87FD-4BC3-8864-3CBA8D4B0ABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23E955DF-87FD-4BC3-8864-3CBA8D4B0ABF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5D4FCF56-849C-4BA1-8164-2C725B3A3A09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5D4FCF56-849C-4BA1-8164-2C725B3A3A09}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5D4FCF56-849C-4BA1-8164-2C725B3A3A09}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5D4FCF56-849C-4BA1-8164-2C725B3A3A09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
