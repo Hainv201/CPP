@@ -1,0 +1,10 @@
+C:\Users\Hai Nguyen\Desktop\CPP\Week 7\Week 7\bin\Debug\Week 7.exe.config
+C:\Users\Hai Nguyen\Desktop\CPP\Week 7\Week 7\bin\Debug\Week 7.exe
+C:\Users\Hai Nguyen\Desktop\CPP\Week 7\Week 7\bin\Debug\Week 7.pdb
+C:\Users\Hai Nguyen\Desktop\CPP\Week 7\Week 7\obj\Debug\Week_7.Form1.resources
+C:\Users\Hai Nguyen\Desktop\CPP\Week 7\Week 7\obj\Debug\Week_7.Properties.Resources.resources
+C:\Users\Hai Nguyen\Desktop\CPP\Week 7\Week 7\obj\Debug\Week 7.csproj.GenerateResource.cache
+C:\Users\Hai Nguyen\Desktop\CPP\Week 7\Week 7\obj\Debug\Week 7.csproj.CoreCompileInputs.cache
+C:\Users\Hai Nguyen\Desktop\CPP\Week 7\Week 7\obj\Debug\Week 7.exe
+C:\Users\Hai Nguyen\Desktop\CPP\Week 7\Week 7\obj\Debug\Week 7.pdb
+C:\Users\Hai Nguyen\Desktop\CPP\Week 7\Week 7\obj\Debug\Week 7.csprojAssemblyReference.cache

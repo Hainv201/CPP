@@ -64,18 +64,25 @@ namespace Week_6
 
         private void prove_Click(object sender, EventArgs e)
         {
-            double Blamda = Convert.ToDouble(lamdaB.Text);
-            int nrofevents = Convert.ToInt32(events.Text);
-            int Binterval = Convert.ToInt32(interval.Text);
-            Exponential expo = new Exponential();
-            expo.GetVariate(nrofevents, Blamda);
-            List<double> SimulationSamples = expo.GetSimulationSamples(Binterval);
-            mean.Text = expo.GetMean(SimulationSamples).ToString();
-            variance.Text = expo.GetVariance(SimulationSamples).ToString();
-            sdeviation.Text = expo.GetStandardDeviation().ToString();
-            Poisson poisson = new Poisson();
-            poisson.Samples = SimulationSamples;
-            poisson.GetGraph(chart1, Blamda, SimulationSamples.Count);
+            try
+            {
+                double Blamda = Convert.ToDouble(lamdaB.Text);
+                int nrofevents = Convert.ToInt32(events.Text);
+                int Binterval = Convert.ToInt32(interval.Text);
+                Exponential expo = new Exponential();
+                expo.GetVariate(nrofevents, Blamda);
+                List<double> SimulationSamples = expo.GetSimulationSamples(Binterval);
+                mean.Text = expo.GetMean(SimulationSamples).ToString();
+                variance.Text = expo.GetVariance(SimulationSamples).ToString();
+                sdeviation.Text = expo.GetStandardDeviation().ToString();
+                Poisson poisson = new Poisson();
+                poisson.Samples = SimulationSamples;
+                poisson.GetGraph(chart1, Blamda, SimulationSamples.Count);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

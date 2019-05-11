@@ -52,7 +52,108 @@ namespace CPPUnitTest
         [TestMethod]
         public void TestSubstractSimplify()
         {
-
+            string test1 = "-(-(x,2),3)";
+            Formula formula1 = new Formula(test1);
+            Assert.AreEqual(formula1.RootFunction.ToString(), "(x-5)");
+            string test2 = "-(-(5,x),3)";
+            Formula formula2 = new Formula(test2);
+            Assert.AreEqual(formula2.RootFunction.ToString(), "(2-x)");
+            string test3 = "-(5,-(x,2))";
+            Formula formula3 = new Formula(test3);
+            Assert.AreEqual(formula3.RootFunction.ToString(), "(7-x)");
+            string test4 = "-(5,-(2,x))";
+            Formula formula4 = new Formula(test4);
+            Assert.AreEqual(formula4.RootFunction.ToString(), "(3+x)");
+            string test5 = "-(+(x,2),3)";
+            Formula formula5 = new Formula(test5);
+            Assert.AreEqual(formula5.RootFunction.ToString(), "(x+-1)");
+            string test6 = "-(+(2,x),3)";
+            Formula formula6 = new Formula(test6);
+            Assert.AreEqual(formula6.RootFunction.ToString(), "(-1+x)");
+            string test7 = "-(3,+(x,2))";
+            Formula formula7 = new Formula(test7);
+            Assert.AreEqual(formula7.RootFunction.ToString(), "(1-x)");
+            string test8 = "-(3,+(2,x))";
+            Formula formula8 = new Formula(test8);
+            Assert.AreEqual(formula8.RootFunction.ToString(), "(1-x)");
+        }
+        [TestMethod]
+        public void TestPlusSimplify()
+        {
+            string test1 = "+(+(x,2),3)";
+            Formula formula1 = new Formula(test1);
+            Assert.AreEqual(formula1.RootFunction.ToString(), "(x+5)");
+            string test2 = "+(+(5,x),3)";
+            Formula formula2 = new Formula(test2);
+            Assert.AreEqual(formula2.RootFunction.ToString(), "(x+8)");
+            string test3 = "+(5,+(x,2))";
+            Formula formula3 = new Formula(test3);
+            Assert.AreEqual(formula3.RootFunction.ToString(), "(x+7)");
+            string test4 = "+(5,+(2,x))";
+            Formula formula4 = new Formula(test4);
+            Assert.AreEqual(formula4.RootFunction.ToString(), "(x+7)");
+            string test5 = "+(-(x,2),3)";
+            Formula formula5 = new Formula(test5);
+            Assert.AreEqual(formula5.RootFunction.ToString(), "(x+1)");
+            string test6 = "+(-(2,x),3)";
+            Formula formula6 = new Formula(test6);
+            Assert.AreEqual(formula6.RootFunction.ToString(), "(5-x)");
+            string test7 = "+(3,-(x,2))";
+            Formula formula7 = new Formula(test7);
+            Assert.AreEqual(formula7.RootFunction.ToString(), "(x+1)");
+            string test8 = "+(3,-(2,x))";
+            Formula formula8 = new Formula(test8);
+            Assert.AreEqual(formula8.RootFunction.ToString(), "(5-x)");
+        }
+        [TestMethod]
+        public void TestMultiplySimplify()
+        {
+            string test1 = "*(*(x,2),3)";
+            Formula formula1 = new Formula(test1);
+            Assert.AreEqual(formula1.RootFunction.ToString(), "(6*x)");
+            string test2 = "*(3,*(5,x))";
+            Formula formula2 = new Formula(test2);
+            Assert.AreEqual(formula2.RootFunction.ToString(), "(15*x)");
+            string test3 = "*(5,*(x,2))";
+            Formula formula3 = new Formula(test3);
+            Assert.AreEqual(formula3.RootFunction.ToString(), "(10*x)");
+            string test4 = "*(4,/(2,x))";
+            Formula formula4 = new Formula(test4);
+            Assert.AreEqual(formula4.RootFunction.ToString(), "(8/x)");
+            string test5 = "*(/(x,2),4)";
+            Formula formula5 = new Formula(test5);
+            Assert.AreEqual(formula5.RootFunction.ToString(), "(x*2)");
+            string test6 = "*(/(4,x),2)";
+            Formula formula6 = new Formula(test6);
+            Assert.AreEqual(formula6.RootFunction.ToString(), "(8/x)");
+        }
+        [TestMethod]
+        public void TestDivideSimplify()
+        {
+            string test1 = "/(/(x,2),3)";
+            Formula formula1 = new Formula(test1);
+            Assert.AreEqual(formula1.RootFunction.ToString(), "(x/6)");
+            string test2 = "/(/(6,x),3)";
+            Formula formula2 = new Formula(test2);
+            Assert.AreEqual(formula2.RootFunction.ToString(), "(2/x)");
+            string test3 = "/(5,/(x,2))";
+            Formula formula3 = new Formula(test3);
+            Assert.AreEqual(formula3.RootFunction.ToString(), "(10/x)");
+            string test4 = "/(4,/(2,x))";
+            Formula formula4 = new Formula(test4);
+            Assert.AreEqual(formula4.RootFunction.ToString(), "(2*x)");
+            string test5 = "/(*(x,4),2)";
+            Formula formula5 = new Formula(test5);
+            Assert.AreEqual(formula5.RootFunction.ToString(), "(2*x)");
+            string test6 = "/(*(6,x),2)";
+            Formula formula6 = new Formula(test6);
+            Assert.AreEqual(formula6.RootFunction.ToString(), "(3*x)");
+            string test7 = "/(4,*(x,2))";
+            Formula formula7 = new Formula(test7);
+            Assert.AreEqual(formula7.RootFunction.ToString(), "(2/x)");
+            string test8 = "/(4,*(2,x))";
+            Formula formula8 = new Formula(test8);
+            Assert.AreEqual(formula8.RootFunction.ToString(), "(2/x)");
         }
     }
 }
