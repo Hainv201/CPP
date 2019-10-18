@@ -230,7 +230,8 @@ namespace CPP
         }
         private void PrintFormula(string content)
         {
-            string path = @"C:\Users\Hai Nguyen\Desktop\CPP\CPP\TestedFormula.txt";
+            string path = Environment.CurrentDirectory.ToString()+ @"\TestedFormula.txt";
+            Console.WriteLine(path);
             if (!File.Exists(path))
             {
                 using (StreamWriter sw = File.CreateText(path))

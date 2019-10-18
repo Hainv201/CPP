@@ -1,8 +1,6 @@
 graph caculus { 
 node [] 
-node1 [ label = "/" ]
-node2 [ label = "8" ]
+node1 [ label = "sin" ]
+node2 [ label = "x" ]
 node1 -- node2
-node3 [ label = "x" ]
-node1 -- node3
 }
