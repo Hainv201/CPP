@@ -1,6 +1,4 @@
 graph caculus { 
 node [] 
-node1 [ label = "sin" ]
-node2 [ label = "x" ]
-node1 -- node2
+node1 [ label = "1.5" ]
 }

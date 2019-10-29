@@ -110,7 +110,7 @@ namespace CPP
                     break;
                 case "r":
                     listNotations.Remove(token);
-                    string valueR = listNotations.First().Replace('.',',');
+                    string valueR = listNotations.First();
                     currentNode = new RealNumber(Convert.ToDouble(valueR));
                     listNotations.Remove(listNotations.First());
                     break;
