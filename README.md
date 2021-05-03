@@ -1,2 +1,2 @@
-# CPP
-Calculus in Professional Practice
+# Calculus in Professional Practice
+
